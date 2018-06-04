@@ -1,4 +1,4 @@
-table 123456710 "Seminar Registration Header"
+    table 123456710 "Seminar Registration Header"
 {
     // CSD1.00 - 2018-01-01 - D. E. Veloper
     //   Chapter 6 - Lab 1-3 & Lab 1-4
@@ -119,17 +119,17 @@ table 123456710 "Seminar Registration Header"
                   "Room Country/Reg. Code" := SeminarRoom."Country/Region Code";
 
                   if (CurrFieldNo <> 0) then begin
-                    if (SeminarRoom."Maximum Participants" <> 0) and
-                       (SeminarRoom."Maximum Participants" < "Maximum Participants")
+                    if (SeminarRoom."csd_Maximum Participants" <> 0) and
+                       (SeminarRoom."csd_Maximum Participants" < "Maximum Participants")
                     then begin
                       if Confirm(Text004,true,
                            "Maximum Participants",
-                           SeminarRoom."Maximum Participants",
+                           SeminarRoom."csd_Maximum Participants",
                            FieldCaption("Maximum Participants"),
                            "Maximum Participants",
-                           SeminarRoom."Maximum Participants")
+                           SeminarRoom."csd_Maximum Participants")
                       then
-                        "Maximum Participants" := SeminarRoom."Maximum Participants";
+                        "Maximum Participants" := SeminarRoom."csd_Maximum Participants";
                     end;
                   end;
                 end;
@@ -205,8 +205,8 @@ table 123456710 "Seminar Registration Header"
         }
         field(22;Comment;Boolean)
         {
-            CalcFormula = Exist("Seminar Comment Line" where ("Table Name"=const("Seminar Registration Header"),
-                                                              "No."=Field("No.")));
+            //CalcFormula = Exist("Seminar Comment Line" where ("Table Name"=const("Seminar Registration Header"),
+            //                                                  "No."=Field("No.")));
             Editable = false;
             FieldClass = FlowField;
         }

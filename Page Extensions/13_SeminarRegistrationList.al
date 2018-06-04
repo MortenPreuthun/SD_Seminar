@@ -38,7 +38,7 @@ page 123456713 "Seminar Registration List"
                 field("Maximum Participants";"Maximum Participants")
                 {
                 }
-                field("Room Resource Code";"Room Resource Code")
+                field("Room Resource Code";"Room Code")
                 {
                 }
             }
@@ -67,7 +67,7 @@ page 123456713 "Seminar Registration List"
                     Image = Comment;
                     RunObject = Page 123456706;
                     RunPageLink = "No."=Field("No.");
-                    RunPageView = where("Table Name"=const("Seminar Registration Header"));
+                    RunPageView = where("Table Name"=const("Seminar Registration"));
                 }
                 action("&Charges")
                 {

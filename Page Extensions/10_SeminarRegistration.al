@@ -33,7 +33,7 @@ page 123456710 "Seminar Registration"
                 field("Seminar Name";"Seminar Name")
                 {
                 }
-                field("Instructor Resource No.";"Instructor Resource No.")
+                field("Instructor Resource No.";"Instructor Code")
                 {
                 }
                 field("Instructor Name";"Instructor Name")
@@ -58,9 +58,10 @@ page 123456710 "Seminar Registration"
                 {
                 }
             }
+            part(SeminarRegistrationLines;seminar regi)
             group("Seminar Room")
             {
-                field("Room Resource Code";"Room Resource Code")
+                field("Room Resource Code";"Room Code")
                 {
                 }
                 field("Room Name";"Room Name")
@@ -126,7 +127,7 @@ page 123456710 "Seminar Registration"
                     Image = Comment;
                     RunObject = Page 123456706;
                     RunPageLink = "No."=Field("No.");
-                    RunPageView = where("Table Name"=const("Seminar Registration Header"));
+                    RunPageView = where("Table Name"=const("Seminar Registration"));
                 }
                 action("&Charges")
                 {

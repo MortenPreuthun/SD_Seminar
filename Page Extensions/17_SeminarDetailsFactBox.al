@@ -32,9 +32,6 @@ page 123456717 "Seminar Details FactBox"
             }
         }
     }
-
-    actions
-    {
-    }
+  
 }
 
