@@ -3,7 +3,7 @@
   "name": "ALProjectMPR",
   "publisher": "Default publisher",
   "brief": "",
-  "description": "",
+  "description": "SomeBooking",
   "version": "1.0.0.0",
   "compatibilityId": "1.0.0.0",
   "privacyStatement": "",
@@ -16,8 +16,9 @@
   "screenshots": [],
   "platform": "11.0.0.0",
   "application": "11.0.0.0",
+  "showMyCode": true,
   "idRange": {
-    "from": 50100,
-    "to": 50149
+    "from": 123456700,
+    "to": 123456799
   }
 }
